@@ -7,11 +7,29 @@ using UnityEngine.UI;
 public class AtteluParadisana : MonoBehaviour {
     public Sprite[] koRadit;
     public GameObject kurRadit;
+
+    //Rokas
     public GameObject Zobens;
     public GameObject Wand;
     public GameObject Aizsargs;
+
+    //Uzvelks
     public GameObject ApgerbsBurvis;
     public GameObject ApgerbsKaravirs;
+    
+    //Cimdi
+    public GameObject CimdiKLabaRoka;
+    public GameObject CimdikKreisaRoka;
+
+    public GameObject CimdiBLabaRoka;
+    public GameObject CimdiBKreisaRoka;
+  
+    //Zabaki
+    public GameObject ZabakiBKreisaKaja;
+    public GameObject ZabakiBLabaKaja;
+
+    public GameObject ZabakiKKreisaKaja;
+    public GameObject ZabakikLabaKaja;
 
 
     public void izkritosaisFons(int indekss)
@@ -48,5 +66,31 @@ public class AtteluParadisana : MonoBehaviour {
     {
         ApgerbsKaravirs.SetActive(vertiba);
     }
+
+    public void CimdiKAttelosana(bool vertiba)
+    {
+        CimdiKLabaRoka.SetActive(vertiba);
+        CimdikKreisaRoka.SetActive(vertiba);
+    }
+
+    public void CimdiBAttelosana(bool vertiba)
+    {
+        CimdiBLabaRoka.SetActive(vertiba);
+        CimdiBKreisaRoka.SetActive(vertiba);
+    }
+
+
+    public void ZabakiBAttelosana(bool vertiba)
+    {
+        ZabakiBKreisaKaja.SetActive(vertiba);
+        ZabakiBLabaKaja.SetActive(vertiba);
+    }
+
+    public void ZabakiKAttelosana(bool vertiba)
+    {
+        ZabakiKKreisaKaja.SetActive(vertiba);
+        ZabakikLabaKaja.SetActive(vertiba);
+    }
+
 
 }
