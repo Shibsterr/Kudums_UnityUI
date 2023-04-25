@@ -31,6 +31,12 @@ public class AtteluParadisana : MonoBehaviour {
     public GameObject ZabakiKKreisaKaja;
     public GameObject ZabakikLabaKaja;
 
+    //Galva
+    public GameObject Galva;
+    public GameObject Seja;
+    public GameObject Mati;
+    public GameObject BurvjaCepure;
+    public GameObject Kivere;
 
     public void izkritosaisFons(int indekss)
     {
@@ -92,5 +98,40 @@ public class AtteluParadisana : MonoBehaviour {
         ZabakikLabaKaja.SetActive(vertiba);
     }
 
+    public void CepuresAttelosana(bool vertiba)
+    {
+        if(vertiba == true)
+        {
+            Galva.SetActive(false);
+            Mati.SetActive(false);
+            Seja.SetActive(false);
+            BurvjaCepure.SetActive(true);
+        }
+        else
+        {
+            Galva.SetActive(true);
+            Mati.SetActive(true);
+            Seja.SetActive(true);
+            BurvjaCepure.SetActive(false);
+        }
+    }
+
+    public void KiveresAttelosana(bool vertiba)
+    {
+        if (vertiba == true)
+        {
+            Galva.SetActive(false);
+            Mati.SetActive(false);
+            Seja.SetActive(false);
+            Kivere.SetActive(true);
+        }
+        else
+        {
+            Galva.SetActive(true);
+            Mati.SetActive(true);
+            Seja.SetActive(true);
+            Kivere.SetActive(false);
+        }
+    }
 
 }
