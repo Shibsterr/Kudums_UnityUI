@@ -15,6 +15,6 @@ public class VarduParadisana : MonoBehaviour {
     {
         teksts = ievadesLauksVards.GetComponent<Text>().text;
         teksts2 = ievadesLauksCipars.GetComponent<Text>().text;
-        TekstaLauks1.GetComponent<Text>().text = "Tavu telu sauc "+ teksts + " un vinam ir "+ teksts2 + " gadi.";
+		TekstaLauks1.GetComponent<Text>().text = "Tavu telu sauc "+ teksts + " un vinam ir "+ teksts2 + " gadi un viņš aizsargā ciematus.";
     }
 }
